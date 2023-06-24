@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <h1 id="title">Student Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+</head>
+<body>
+    <form id="survey-form">
+        <div class="input-element">
+          <label id="name-label">
+            Name
+          </label>
+          <input placeholder="Enter your name" id="name" type="text" required></input>
+        </div>
+        <div class="input-element">
+          <label id="email-label">
+            Email
+          </label>
+          <input placeholder="Enter your email" id="email" type="email" required></input>
+        </div>
+        <div class="input-element">
+          <label id="number-label">
+            Age
+          </label>
+          <input placeholder="Enter your age" id="number" min="16" max="99" type="number" required></input>
+        </div>
+        <div class="input-element">
+          <label id="select-label">
+            Choose major you're interest in
+          </label>
+          <select id="dropdown" >
+            <option>Food Technoloy</option>
+            <option>Medical</option>
+            <option>Computer Science</option>
+            <option>Language and Arts</option>
+            <option>Business</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="input-element">
+          <label>Choose your Semester</label>
+          <div>
+            <label><input type="radio" name="semester" value="odd" />Odd</label>
+          </div>
+          <div>
+            <label><input type="radio" name="semester" value="even" />Even</label>
+          </div>
+        </div>
+          <div class="input-element">
+            <label>Choose your hobbies (Check all that apply)</label>
+          <div>
+            <label><input type="checkbox" name="hobiies" value="singing"/>Singing</label>
+          </div>
+          <div>
+            <label><input type="checkbox" name="hobbies" value="panting" />Painting</label>
+          </div>
+          <div>
+            <label><input type="checkbox" name="hobiies" value="writing" />Writing</label>
+          </div>
+          <div>
+            <label><input type="checkbox" name="hobbies" value="music" />Listening to Music</label>
+          </div>
+          <div>
+            <label><input type="checkbox" name="hobiies" value="riding" />Riding</label>
+          </div>
+          <div>
+            <label><input type="checkbox" name="hobbies" value="dancing" />Dancing</label>
+          </div>
+        </div>
+        <div class="input-element">
+          <label>Additional comments</label>
+          <textarea type="text" placeholder="Enter Your Comment" ></textarea>
+        </div>
+        <button type="submit" id="submit">
+          Submit
+        </button>
+      </form>
+</body>
+</html>
